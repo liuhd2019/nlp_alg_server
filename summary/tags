@@ -1,0 +1,102 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BertParent	summarizer/bert_parent.py	/^class BertParent(object):$/;"	c
+ClusterFeatures	summarizer/cluster_features.py	/^class ClusterFeatures(object):$/;"	c
+CoreferenceHandler	summarizer/coreference_handler.py	/^class CoreferenceHandler(SentenceHandler):$/;"	c
+MODELS	summarizer/bert_parent.py	/^    MODELS = {$/;"	v	class:BertParent
+MODEL_DICT	summarizer/model_processors.py	/^    MODEL_DICT = {$/;"	v	class:TransformerSummarizer
+ModelProcessor	summarizer/model_processors.py	/^class ModelProcessor(object):$/;"	c
+Parser	server.py	/^class Parser(object):$/;"	c
+SentenceHandler	summarizer/sentence_handler.py	/^class SentenceHandler(object):$/;"	c
+Summarizer	summarizer/model_processors.py	/^class Summarizer(ModelProcessor):$/;"	c
+TransformerSummarizer	summarizer/model_processors.py	/^class TransformerSummarizer(ModelProcessor):$/;"	c
+__call__	summarizer/bert_parent.py	/^    def __call__($/;"	m	class:BertParent	file:
+__call__	summarizer/cluster_features.py	/^    def __call__(self, ratio: float = 0.1, num_sentences: int = None) -> List[int]:$/;"	m	class:ClusterFeatures	file:
+__call__	summarizer/model_processors.py	/^    def __call__($/;"	m	class:ModelProcessor	file:
+__call__	summarizer/sentence_handler.py	/^    def __call__(self, body: str, min_length: int = 40, max_length: int = 600) -> List[str]:$/;"	m	class:SentenceHandler	file:
+__find_closest_args	summarizer/cluster_features.py	/^    def __find_closest_args(self, centroids: np.ndarray) -> Dict:$/;"	m	class:ClusterFeatures	file:
+__get_centroids	summarizer/cluster_features.py	/^    def __get_centroids(self, model):$/;"	m	class:ClusterFeatures	file:
+__get_model	summarizer/cluster_features.py	/^    def __get_model(self, k: int):$/;"	m	class:ClusterFeatures	file:
+__init__	server.py	/^    def __init__(self, raw_text: bytes):$/;"	m	class:Parser
+__init__	summarizer/bert_parent.py	/^    def __init__($/;"	m	class:BertParent
+__init__	summarizer/cluster_features.py	/^    def __init__($/;"	m	class:ClusterFeatures
+__init__	summarizer/coreference_handler.py	/^    def __init__(self, spacy_model: str = 'en_core_web_sm', greedyness: float = 0.45):$/;"	m	class:CoreferenceHandler
+__init__	summarizer/model_processors.py	/^    def __init__($/;"	m	class:ModelProcessor
+__init__	summarizer/model_processors.py	/^    def __init__($/;"	m	class:Summarizer
+__init__	summarizer/model_processors.py	/^    def __init__($/;"	m	class:TransformerSummarizer
+__init__	summarizer/sentence_handler.py	/^    def __init__(self, language=English):$/;"	m	class:SentenceHandler
+__isint	server.py	/^    def __isint(self, v) -> bool:$/;"	m	class:Parser	file:
+__process_sentences	server.py	/^    def __process_sentences(self, v) -> List[str]:$/;"	m	class:Parser	file:
+__retrieve_summarized_embeddings	summarizer/model_processors.py	/^    def __retrieve_summarized_embeddings($/;"	m	class:ModelProcessor	file:
+__run_clusters	summarizer/model_processors.py	/^    def __run_clusters($/;"	m	class:ModelProcessor	file:
+__should_skip	server.py	/^    def __should_skip(self, v) -> bool:$/;"	m	class:Parser	file:
+_pooled_handler	summarizer/bert_parent.py	/^    def _pooled_handler(self, hidden: torch.Tensor, reduce_option: str) -> torch.Tensor:$/;"	m	class:BertParent
+aggregate_map	summarizer/model_processors.py	/^    aggregate_map = {$/;"	v	class:ModelProcessor
+app	server.py	/^app = Flask(__name__)$/;"	v
+args	server.py	/^    args = parser.parse_args()$/;"	v
+author	setup.py	/^      author='Derek Miller',$/;"	v
+author_email	setup.py	/^      author_email='dmmiller612@gmail.com',$/;"	v
+cluster	summarizer/cluster_features.py	/^    def cluster(self, ratio: float = 0.1, num_sentences: int = None) -> List[int]:$/;"	m	class:ClusterFeatures
+cluster_runner	summarizer/model_processors.py	/^    def cluster_runner($/;"	m	class:ModelProcessor
+convert_raw_text_by_ratio	server.py	/^def convert_raw_text_by_ratio():$/;"	f
+convert_raw_text_by_sent	server.py	/^def convert_raw_text_by_sent():$/;"	f
+convert_to_paragraphs	server.py	/^    def convert_to_paragraphs(self) -> str:$/;"	m	class:Parser
+coreference_handler	tests/test_coreference.py	/^def coreference_handler():$/;"	f
+create_matrix	summarizer/bert_parent.py	/^    def create_matrix($/;"	m	class:BertParent
+custom_summarizer	tests/test_summary_items.py	/^def custom_summarizer():$/;"	f
+data	test.py	/^data = {$/;"	v
+description	setup.py	/^      description='Extractive Text Summarization with BERT',$/;"	v
+download_url	setup.py	/^      download_url='https:\/\/github.com\/dmmiller612\/bert-extractive-summarizer\/archive\/0.7.0.tar.gz',$/;"	v
+extract_embeddings	summarizer/bert_parent.py	/^    def extract_embeddings($/;"	m	class:BertParent
+hello_world	server.py	/^def hello_world():$/;"	f
+help	server.py	/^                        help='Huggingface transformer class key')$/;"	v
+help	server.py	/^                        help='The transformer key for huggingface. For example bert-base-uncased for Bert Class')$/;"	v
+hidden	server.py	/^            hidden=int(args.hidden),$/;"	v
+install_requires	setup.py	/^      install_requires=['transformers', 'scikit-learn', 'spacy'],$/;"	v
+keywords	setup.py	/^      keywords = ['bert', 'pytorch', 'machine learning', 'deep learning', 'extractive summarization', 'summary'],$/;"	v
+license	setup.py	/^      license='MIT',$/;"	v
+long_description	setup.py	/^      long_description=open("README.md", "r", encoding='utf-8').read(),$/;"	v
+long_description_content_type	setup.py	/^      long_description_content_type="text\/markdown",$/;"	v
+model	server.py	/^            model=args.model,$/;"	v
+packages	setup.py	/^      packages=find_packages(),$/;"	v
+parser	server.py	/^    parser = argparse.ArgumentParser(description='')$/;"	v
+passage	tests/test_sentence_handler.py	/^def passage():$/;"	f
+passage	tests/test_summary_items.py	/^def passage():$/;"	f
+process	summarizer/coreference_handler.py	/^    def process(self, body: str, min_length: int = 40, max_length: int = 600):$/;"	m	class:CoreferenceHandler
+process	summarizer/sentence_handler.py	/^    def process(self, body: str, min_length: int = 40, max_length: int = 600) -> List[str]:$/;"	m	class:SentenceHandler
+r	test.py	/^r = requests.post("http:\/\/127.0.0.1:8089\/summarize_by_ratio", json = data)$/;"	v
+reduce_option	server.py	/^            reduce_option=args.reduce$/;"	v
+run	server.py	/^    def run(self) -> List[str]:$/;"	m	class:Parser
+run	summarize.py	/^def run():$/;"	f
+run	summarizer/model_processors.py	/^    def run($/;"	m	class:ModelProcessor
+run_embeddings	summarizer/model_processors.py	/^    def run_embeddings($/;"	m	class:ModelProcessor
+save_data	server.py	/^    def save_data(self, save_path, sentences) -> None:$/;"	m	class:Parser
+sentence_handler	tests/test_sentence_handler.py	/^def sentence_handler():$/;"	f
+sentence_processor	summarizer/sentence_handler.py	/^    def sentence_processor(self, doc, min_length: int = 40, max_length: int = 600):$/;"	m	class:SentenceHandler
+summarizer	server.py	/^        summarizer = Summarizer($/;"	v
+summarizer	server.py	/^        summarizer = TransformerSummarizer($/;"	v
+summarizer	tests/test_summary_items.py	/^def summarizer():$/;"	f
+summarizer_multi_hidden	tests/test_summary_items.py	/^def summarizer_multi_hidden():$/;"	f
+test_aggregate_embeddings	tests/test_summary_items.py	/^def test_aggregate_embeddings(summarizer, passage):$/;"	f
+test_albert	tests/test_summary_items.py	/^def test_albert(custom_summarizer, passage):$/;"	f
+test_cluster_algorithm	tests/test_summary_items.py	/^def test_cluster_algorithm(summarizer, passage):$/;"	f
+test_coreference_handler	tests/test_coreference.py	/^def test_coreference_handler(coreference_handler):$/;"	f
+test_do_not_use_first	tests/test_summary_items.py	/^def test_do_not_use_first(summarizer, passage):$/;"	f
+test_multi_hidden	tests/test_summary_items.py	/^def test_multi_hidden(summarizer_multi_hidden, passage):$/;"	f
+test_multi_hidden_concat	tests/test_summary_items.py	/^def test_multi_hidden_concat(summarizer_multi_hidden: Summarizer, passage):$/;"	f
+test_num_sentences	tests/test_summary_items.py	/^def test_num_sentences(summarizer, passage):$/;"	f
+test_num_sentences_embeddings	tests/test_summary_items.py	/^def test_num_sentences_embeddings(summarizer, passage):$/;"	f
+test_sentence_splits_default	tests/test_sentence_handler.py	/^def test_sentence_splits_default(sentence_handler, passage):$/;"	f
+test_summary_creation	tests/test_summary_items.py	/^def test_summary_creation(summarizer, passage):$/;"	f
+test_summary_embeddings	tests/test_summary_items.py	/^def test_summary_embeddings(summarizer, passage):$/;"	f
+test_summary_larger_ratio	tests/test_summary_items.py	/^def test_summary_larger_ratio(summarizer, passage):$/;"	f
+tokenize_input	summarizer/bert_parent.py	/^    def tokenize_input(self, text: str) -> torch.tensor:$/;"	m	class:BertParent
+transformer_model_key	server.py	/^            transformer_model_key=args.transformer_key,$/;"	v
+transformer_type	server.py	/^            transformer_type=args.transformer_type,$/;"	v
+url	setup.py	/^      url='https:\/\/github.com\/dmmiller612\/bert-extractive-summarizer',$/;"	v
+version	setup.py	/^      version='0.7.0',$/;"	v
+zip_safe	setup.py	/^      zip_safe=False)$/;"	v
